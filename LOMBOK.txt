@@ -1,0 +1,37 @@
+LOMBOK:
+By using lombok we can improve readability of the source code,the maintaince of the application will be easy.
+Following are the important annotations of lombok library.
+@Getter
+It is an annotation belongs to Lombok Library.
+it can be used both on a field as well as on a class.
+it is used on the field it will generate the getter only for the particular field.
+if it is used on class,it wil generate getters for all the fields in that class.
+@Setter
+It is an annotation belongs to Lombok Library.
+it can be used both on a field as well as on a class.
+it is used on the field it will generate the setter only for the particular field.
+if it is used on class,it wil generate setters for all the fields in that class.
+@ToString
+it is  a class level annotation belongs to lombok library.
+It is used to generate the ToString() method for the annotated class.
+we can exclude a field by usib=ng exclude attribute.
+@Data
+it is class level annotation belongs to Lombok library.
+It is a convenience annotation for @Getter,@Setter,@ToString,@EqualsAndHashCode and @RequiredArgsconstructor.
+@data is used to generate all the Boiler plate code that is required for POJO classes.(Getters,setters,No-Args-Constructor)
+@EqualsAndHashCode
+it is class level annotation belongs to Lombok library.
+it is used to generate the equals() and hashcode() for the annotated class.
+we can exclude an attribute by using exclude attribute.
+---------------------------------------------------------------------------------------------------------
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.28</version>
+    <scope>provided</scope>
+</dependency>
+
+
+
+
